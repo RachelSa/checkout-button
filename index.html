@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dino Emporium</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Montserrat" rel="stylesheet">
+    <link rel="icon" href="./dino.ico">
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1 id="banner-text">Dinosaur Emporium</h1>
+      <div id="notification-container"></div>
+      <div class="items-wrapper">
+        <div class="item">
+          <form id="bread-checkout-form" action="/confirm" method="POST">
+            <div class="item-title">Dinosaur Egg</div>
+            <div class="item-subtitle">hatch a domestic, family-friendly dinosaur</div>
+            <img src="https://media.giphy.com/media/kkhvbvK6nfGcU/giphy.gif" alt="cute baby dinos" width="250" height="250">
+            <div id="bread-checkout-btn" data-bread-default-size="true" class="bread-as-low-as"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://checkout-sandbox.getbread.com/bread.js" data-api-key=""></script>
+    <script src="./javascripts/notification.js"></script>
+    <script src="./javascripts/tax.js"></script>
+    <script src="./javascripts/checkout.js"></script>
+  </body>
+</html>
